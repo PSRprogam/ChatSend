@@ -61,7 +61,7 @@ function sendMessage() {
         websocket.send(message);
         messageInput.value = ''; // Limpa o campo de entrada de mensagem
         displayMessage( `${username}: ` + message, true); // Exibe a mensagem enviada no lado direito
-        
+     
     } else {
         console.error("A conexão WebSocket não está aberta");
     }
